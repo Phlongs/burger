@@ -10,11 +10,11 @@ else{
   connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : 'Book1234', // Add your password
+    password : '', // Add your password
     database : 'burgers_db' // Add your database
   });
 }
 
-
+connection.connect();
 // Export the Connection
 module.exports = connection;
