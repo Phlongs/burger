@@ -1,4 +1,4 @@
-// Node Dependency
+
 var mysql = require('mysql');
 var connection;
 
@@ -10,11 +10,10 @@ else{
   connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : '', // Add your password
-    database : 'burgers_db' // Add your database
+    password : 'Book1234',
+    database : 'burgers_db'
   });
 }
 
-connection.connect();
 // Export the Connection
 module.exports = connection;
